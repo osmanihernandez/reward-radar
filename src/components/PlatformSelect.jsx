@@ -7,7 +7,7 @@ function PlatformSelect({ value, setSelectedPlatform }) {
   };
 
   return (
-    <Box sx={{ minWidth: 250 }}>
+    <Box sx={{ minWidth: 200 }}>
       <FormControl fullWidth size="small">
         <InputLabel id="platform-select-label">Platform</InputLabel>
         <Select

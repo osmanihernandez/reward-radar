@@ -5,11 +5,13 @@ import PlatformSelect from "./PlatformSelect";
 import SearchBox from "./SearchBox";
 import Pagination from "@mui/material/Pagination";
 import GiveawayTable from "./GiveawayTable";
+import TypeSelect from "./TypeSelect";
 
 export default function Dashboard() {
   const [giveaways, setGiveaways] = useState([]);
   const [filteredGiveaways, setFilteredGiveaways] = useState([]);
   const [selectedPlatform, setSelectedPlatform] = useState("");
+  const [selectedType, setSelectedType] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [page, setPage] = useState(1);
   const itemsPerPage = 9;
@@ -20,12 +22,14 @@ export default function Dashboard() {
   // Query API
   const fetchGiveaways = async () => {
     try {
+      const queryParams = new URLSearchParams();
+      if (selectedPlatform) queryParams.append("platform", selectedPlatform);
+      if (selectedType) queryParams.append("type", selectedType);
+
       const url =
         "https://corsproxy.io/?" +
         encodeURIComponent(
-          `https://www.gamerpower.com/api/giveaways${
-            selectedPlatform ? `?platform=${selectedPlatform}` : ""
-          }`
+          `https://www.gamerpower.com/api/giveaways?${queryParams.toString()}`
         );
 
       const response = await fetch(url);
@@ -110,6 +114,7 @@ export default function Dashboard() {
             value={selectedPlatform}
             setSelectedPlatform={setSelectedPlatform}
           />
+          <TypeSelect value={selectedType} onChange={setSelectedType} />
           <Button variant="contained" onClick={fetchGiveaways}>
             Find Giveaways
           </Button>

@@ -9,6 +9,7 @@ import {
   Avatar,
   Button,
   Typography,
+  Chip,
 } from "@mui/material";
 
 export default function GiveawayTable({ giveaways }) {
@@ -21,6 +22,7 @@ export default function GiveawayTable({ giveaways }) {
             <TableCell>Title</TableCell>
             <TableCell>Worth</TableCell>
             <TableCell>Platforms</TableCell>
+            <TableCell>Type</TableCell>
             <TableCell>Link</TableCell>
           </TableRow>
         </TableHead>
@@ -40,6 +42,14 @@ export default function GiveawayTable({ giveaways }) {
               </TableCell>
               <TableCell>{g.worth}</TableCell>
               <TableCell>{g.platforms}</TableCell>
+              <TableCell>
+                <Chip
+                  label={g.type}
+                  color="secondary" // Use a single color here
+                  size="small"
+                  variant="outlined"
+                />
+              </TableCell>
               <TableCell>
                 <Button
                   variant="outlined"

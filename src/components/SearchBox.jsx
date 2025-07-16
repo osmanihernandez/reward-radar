@@ -3,7 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 function SearchBox({ value, onChange }) {
   return (
-    <Box sx={{ width: 400 }}>
+    <Box sx={{ width: 300 }}>
       <TextField
         value={value}
         onChange={(e) => onChange(e.target.value)}
