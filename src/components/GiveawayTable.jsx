@@ -13,11 +13,11 @@ import {
 
 export default function GiveawayTable({ giveaways }) {
   return (
-    <TableContainer component={Paper} sx={{ mt: 4 }}>
+    <TableContainer component={Paper} variant="outlined" sx={{ mt: 4 }}>
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Thumbnail</TableCell>
+            <TableCell>Snapshot</TableCell>
             <TableCell>Title</TableCell>
             <TableCell>Worth</TableCell>
             <TableCell>Platforms</TableCell>

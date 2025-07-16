@@ -1,20 +1,22 @@
-import { Grid } from "@mui/material";
-import "./App.css";
+import { Box, Grid, Paper } from "@mui/material";
 import Naviagation from "./components/Naviagation";
 import Dashboard from "./components/Dashboard";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Grid container spacing={2}>
+    <Box padding={5}>
+      <Grid container spacing={4}>
         <Grid item size={3}>
-          <Naviagation />
+          <Paper variant="outlined" sx={{ height: "100%" }}>
+            <Naviagation />
+          </Paper>
         </Grid>
         <Grid item size={9}>
           <Dashboard />
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 }
 

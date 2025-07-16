@@ -3,7 +3,6 @@ import { Grid, Paper, Box, Button, Stack } from "@mui/material";
 import StatCard from "./StatCard";
 import PlatformSelect from "./PlatformSelect";
 import SearchBox from "./SearchBox";
-import GiveawayList from "./GiveawayList";
 import Pagination from "@mui/material/Pagination";
 import GiveawayTable from "./GiveawayTable";
 
@@ -37,14 +36,14 @@ export default function Dashboard() {
   );
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box>
       {/* Stat Cards */}
-      <Grid container spacing={2} mb={2}>
+      <Grid container spacing={2} mb={5}>
         <Grid item xs={12} sm={4}>
           <StatCard stat="Total value" value="$1,000" />
         </Grid>
         <Grid item xs={12} sm={4}>
-          <StatCard stat="Giveaways Counts" value="65" />
+          <StatCard stat="Giveaways Count" value="65" />
         </Grid>
         <Grid item xs={12} sm={4}>
           <StatCard stat="Top Prize" value="$120" />
