@@ -3,7 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 function SearchBox() {
   return (
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: 400 }}>
       <TextField
         fullWidth
         variant="outlined"

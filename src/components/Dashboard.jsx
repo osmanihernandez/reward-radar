@@ -8,24 +8,34 @@ import GiveawayTable from "./GiveawayTable";
 
 export default function Dashboard() {
   const [giveaways, setGiveaways] = useState([]);
+  const [selectedPlatform, setSelectedPlatform] = useState("");
   const [page, setPage] = useState(1);
   const itemsPerPage = 9;
 
-  useEffect(() => {
-    const fetchGiveaways = async () => {
-      try {
-        const response = await fetch(
-          "https://corsproxy.io/?" +
-            encodeURIComponent("https://www.gamerpower.com/api/giveaways")
+  const fetchGiveaways = async () => {
+    try {
+      const url =
+        "https://corsproxy.io/?" +
+        encodeURIComponent(
+          `https://www.gamerpower.com/api/giveaways${
+            selectedPlatform !== "all" ? `?platform=${selectedPlatform}` : ""
+          }`
         );
 
-        const data = await response.json();
-        setGiveaways(data);
-      } catch (error) {
-        console.error("Failed to fetch giveaways:", error);
-      }
-    };
+      const response = await fetch(url);
+      const data = await response.json();
 
+      if (!Array.isArray(data)) throw new Error("Invalid response format");
+
+      setGiveaways(data);
+      setPage(1);
+    } catch (error) {
+      console.error("Failed to fetch giveaways:", error);
+      setGiveaways([]);
+    }
+  };
+
+  useEffect(() => {
     fetchGiveaways();
   }, []);
 
@@ -54,8 +64,13 @@ export default function Dashboard() {
       <Stack spacing={3}>
         <Stack direction="row" spacing={2}>
           <SearchBox />
-          <PlatformSelect />
-          <Button variant="contained">Find Giveaways</Button>
+          <PlatformSelect
+            value={selectedPlatform}
+            setSelectedPlatform={setSelectedPlatform}
+          />
+          <Button variant="contained" onClick={fetchGiveaways}>
+            Find Giveaways
+          </Button>
         </Stack>
 
         <GiveawayTable giveaways={currentItems} />
