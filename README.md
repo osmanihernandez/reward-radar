@@ -1,52 +1,45 @@
-# Web Development Project 5 - Reward Radar Dashboard
+# Web Development Project 7 - _Reward Radar_
 
 Submitted by: **Osmani Hernandez**
 
-This web app: **Displays a list of active video game giveaways with filtering, searching, and summary statistics. Users can search giveaways by title, filter by platform or type, and view data in a clean table layout.**
+This web app: **displays free online giveaways and allows users to filter by platform, type, and keyword. It also includes visualizations and detailed views of each giveaway.**
 
-Time spent: **6** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard displays at least 10 unique items, one per row
-  - The dashboard includes at least two features in each row
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data**
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - Total value of all giveaways
-    - Number of giveaways
-    - Highest prize value
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar **correctly** filters items in the list, only displaying items matching the search query
-  - The list of results dynamically updates as the user types into the search bar
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts items in the list using a **different attribute** than the search bar
-  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
-  - The dashboard list dynamically updates as the user adjusts the filter
+- [x] **Clicking on an item in the list view displays more details about it**
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+  - _To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording._
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  - _To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording._
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types
-  - e.g., as a text input, a dropdown or radio selection, and/or a slider
+- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
-- [x] Pagination to navigate through the list of giveaways
+- [ ]
 
 ## Video Walkthrough
 
-Reward Radar - Dashboard - Watch Video
+Here's a walkthrough of implemented user stories:
 
 <div>
-    <a href="https://www.loom.com/share/77cb9fada81b40bd8bffade33595ed48">
-      <p>Reward Radar - 16 July 2025 - Watch Video</p>
+    <a href="https://www.loom.com/share/2246be1f51fc4c0a9712b5efcc2088e1">
+      <p>Reward Radar - 23 July 2025 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/77cb9fada81b40bd8bffade33595ed48">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/77cb9fada81b40bd8bffade33595ed48-8cda8e292173c6c4-full-play.gif">
+    <a href="https://www.loom.com/share/2246be1f51fc4c0a9712b5efcc2088e1">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2246be1f51fc4c0a9712b5efcc2088e1-51fbc047278a4839-full-play.gif">
     </a>
   </div>
 
@@ -54,10 +47,7 @@ GIF created with [Loom](https://www.loom.com)
 
 ## Notes
 
-The most challenging parts were:
-
-- Implementing a clean and responsive UI using Material UI components
-- Managing dynamic filtering and pagination based on multiple inputs (search, platform, type)
+The most challenging part was getting the routing to work properly, especially maintaining sidebar visibility and preserving the giveaway state between views.
 
 ## License
 
