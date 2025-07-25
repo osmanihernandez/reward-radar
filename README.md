@@ -35,11 +35,11 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <div>
-    <a href="https://www.loom.com/share/2246be1f51fc4c0a9712b5efcc2088e1">
-      <p>Reward Radar - 23 July 2025 - Watch Video</p>
+    <a href="https://www.loom.com/share/6469f28e4a9a46bcb70894fec51f7d37">
+      <p>Reward Radar - 25 July 2025 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/2246be1f51fc4c0a9712b5efcc2088e1">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2246be1f51fc4c0a9712b5efcc2088e1-51fbc047278a4839-full-play.gif">
+    <a href="https://www.loom.com/share/6469f28e4a9a46bcb70894fec51f7d37">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/6469f28e4a9a46bcb70894fec51f7d37-44f0f41a4c5dc461-full-play.gif">
     </a>
   </div>
 
