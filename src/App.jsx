@@ -8,6 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        <Route index element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/detail/:id" element={<GiveawayDetail />} />
       </Route>
