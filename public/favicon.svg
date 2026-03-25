@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#EFE7DC"/>
+
+  <!-- Radar circle -->
+  <circle cx="50" cy="50" r="35" stroke="#3A4819" stroke-width="5" fill="none"/>
+
+  <!-- Center dot (reward) -->
+  <circle cx="65" cy="40" r="6" fill="#3A4819"/>
+
+  <!-- Radar sweep line -->
+  <line x1="50" y1="50" x2="80" y2="30" stroke="#3A4819" stroke-width="4"/>
+</svg>

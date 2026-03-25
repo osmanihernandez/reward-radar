@@ -1,45 +1,30 @@
-# Web Development Project 7 - _Reward Radar_
+# Reward Radar
 
-Submitted by: **Osmani Hernandez**
+## Description
 
-This web app: **displays free online giveaways and allows users to filter by platform, type, and keyword. It also includes visualizations and detailed views of each giveaway.**
+The app displays free online giveaways and allows users to filter by platform, type, and keyword. It also includes visualizations and detailed views of each giveaway.
 
-Time spent: **3** hours spent in total
-
-## Required Features
-
-The following **required** functionality is completed:
+## Project Features
 
 - [x] **Clicking on an item in the list view displays more details about it**
   - Clicking on an item in the dashboard list navigates to a detail view for that item
   - Detail view includes extra information about the item not included in the dashboard view
   - The same sidebar is displayed in detail view as in dashboard view
-  - _To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording._
 - [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
-  - _To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording._
 - [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
-  - At least two charts should be incorporated into the dashboard view of the site
-  - Each chart should describe a different aspect of the dataset
-
-The following **optional** features are implemented:
-
-- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data
-- [ ] The site allows users to toggle between different data visualizations
-
-The following **additional** features are implemented:
-
-- [ ]
+  - Two charts are incorporated into the dashboard view of the site
+  - Each chart describes a different aspect of the dataset
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough video:
 
 <div>
-    <a href="https://www.loom.com/share/6469f28e4a9a46bcb70894fec51f7d37">
-      <p>Reward Radar - 25 July 2025 - Watch Video</p>
+    <a href="https://www.loom.com/share/756391de07244222ab1a6b1f8fd15e13">
+      <p>Reward Radar - Walkthrough - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/6469f28e4a9a46bcb70894fec51f7d37">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/6469f28e4a9a46bcb70894fec51f7d37-44f0f41a4c5dc461-full-play.gif">
+    <a href="https://www.loom.com/share/756391de07244222ab1a6b1f8fd15e13">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/756391de07244222ab1a6b1f8fd15e13-68a502fae02431d6-full-play.gif#t=0.1">
     </a>
   </div>
 
@@ -48,19 +33,3 @@ GIF created with [Loom](https://www.loom.com)
 ## Notes
 
 The most challenging part was getting the routing to work properly, especially maintaining sidebar visibility and preserving the giveaway state between views.
-
-## License
-
-    Copyright 2025 Osmani Hernandez
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
