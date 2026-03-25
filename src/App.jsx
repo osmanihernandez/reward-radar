@@ -1,6 +1,6 @@
 import Dashboard from "./components/Dashboard";
 import "./App.css";
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import GiveawayDetail from "./components/GiveawayDetail";
 

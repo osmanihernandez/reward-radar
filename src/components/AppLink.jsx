@@ -1,4 +1,4 @@
-import { Link as RouterLink } from "react-router";
+import { Link as RouterLink } from "react-router-dom";
 import { Link as MuiLink } from "@mui/material";
 
 function AppLink({ to, state, children }) {

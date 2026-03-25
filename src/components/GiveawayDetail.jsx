@@ -7,7 +7,7 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import { useParams, useLocation } from "react-router";
+import { useParams, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function GiveawayDetail() {
@@ -22,7 +22,7 @@ function GiveawayDetail() {
       } else {
         try {
           const res = await fetch(
-            `https://www.gamerpower.com/api/giveaway?id=${id}`
+            `https://www.gamerpower.com/api/giveaway?id=${id}`,
           );
           const data = await res.json();
           setGiveaway(data);

@@ -1,6 +1,6 @@
 import { Box, Grid, Paper } from "@mui/material";
 import Naviagation from "./Naviagation";
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
