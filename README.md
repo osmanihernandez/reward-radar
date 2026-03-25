@@ -22,13 +22,11 @@ Here's a walkthrough video:
 
 <div>
     <a href="https://www.loom.com/share/756391de07244222ab1a6b1f8fd15e13">
-      <p>Reward Radar - Watch Video</p>
-
+      <p>Reward Radar - Walkthrough - Watch Video</p>
     </a>
     <a href="https://www.loom.com/share/756391de07244222ab1a6b1f8fd15e13">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/756391de07244222ab1a6b1f8fd15e13-68a502fae02431d6-full-play.gif#t=0.1">
     </a>
-
   </div>
 
 GIF created with [Loom](https://www.loom.com)
